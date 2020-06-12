@@ -90,6 +90,7 @@ body
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background:black;
 }
 
 .section h1 {
@@ -108,7 +109,8 @@ color: white;
   position: absolute;
   top: 0;
   width: 100%;
-    z-index: -1;
+    z-index: 0;
+    background:black;
 }
 
 .color-overlay {
