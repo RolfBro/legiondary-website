@@ -8,7 +8,7 @@
 header
 {
     background-color: black;
-    height: 112 px;
+    height: 120 px;
     width:100%;
     line-height: 112 px;
     margin:0;
@@ -49,17 +49,19 @@ header nav
     position: absolute;
     margin:auto;
     flex-shrink:0;
-    top:7px;
-    width:3%;
+    top:2px;
+    width: 65px;
+    height: 90%;
     left:100px;
     z-index:1;
+    border-radius: 90%;
 }
 .clanName img
 {
     position: absolute;
     padding-top: 10px;
     margin-left:0;
-    width:20%;
+    width:300px;
     left: 130px;
 }
 
@@ -135,17 +137,24 @@ color: white;
 .bottom
 {
     height: 55vh;
+    width: 100%;
     position: relative;
     margin-bottom:0;
     overflow-y: hidden;
 }
-
 .big-logo
 {
+    display: inline-block;
+}
+.big-logo img
+{
+    height: 475px;
+    width: 475px;
+    padding: 4rem;
+    border-radius: 50%;
     opacity:0.6;
     position: absolute;
     z-index: 1;
-    margin-left:80px;
 }
 
 .container-text
@@ -195,7 +204,8 @@ color: white;
     text-align:left;
     font-size: 20px;
     font-weight: bold;
-    color: deepskyblue;
+    font-family: monospace;
+    color: orange;
     animation:fOut 2.3s;
 }
 
@@ -643,7 +653,7 @@ color: white;
 #slide2:checked ~ #controls label:nth-child(3),
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(1) {
-   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+   background: url("/images/right_arrow.png") no-repeat;
    float:right;
    margin: 0 8px 0 0;
    display: block;
@@ -652,7 +662,7 @@ color: white;
 #slide2:checked ~ #controls label:nth-last-child(4),
 #slide3:checked ~ #controls label:nth-last-child(3),
 #slide4:checked ~ #controls label:nth-last-child(2) {
-   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+   background: url("/images/left_arrow.png") no-repeat;
    float:left;
    margin: 0 0 0 7px;
    display: block;
@@ -813,15 +823,7 @@ header nav
     {
         display:inline-block;
     }
-.logo img
-{
-    margin:auto;
-    position: absolute;
-    flex-shrink:0;
-    width:12%;
-    left:0;
-    top:5px;
-}
+
 .clanName img
 {
     position: absolute;
